@@ -1,0 +1,7 @@
+Bundle-SymbolicName: service.builder.project-api
+Bundle-Version: 1.0.0
+Export-Package:\
+	org.rojoherrero.gondor.exception,\
+	org.rojoherrero.gondor.model,\
+	org.rojoherrero.gondor.service,\
+	org.rojoherrero.gondor.service.persistence

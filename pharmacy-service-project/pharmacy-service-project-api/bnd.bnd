@@ -1,0 +1,7 @@
+Bundle-SymbolicName: pharmacy.service.project-api
+Bundle-Version: 1.0.0
+Export-Package:\
+	org.rojoherrero.gondor.pharmacy.exception,\
+	org.rojoherrero.gondor.pharmacy.model,\
+	org.rojoherrero.gondor.pharmacy.service,\
+	org.rojoherrero.gondor.pharmacy.service.persistence

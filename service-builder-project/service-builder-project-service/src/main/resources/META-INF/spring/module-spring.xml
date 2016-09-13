@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean class="org.rojoherrero.gondor.service.impl.DrugLocalServiceImpl" id="org.rojoherrero.gondor.service.DrugLocalService" />
-	<bean class="org.rojoherrero.gondor.service.impl.DrugServiceImpl" id="org.rojoherrero.gondor.service.DrugService" />
-	<bean class="org.rojoherrero.gondor.service.persistence.impl.DrugPersistenceImpl" id="org.rojoherrero.gondor.service.persistence.DrugPersistence" parent="basePersistence" />
-</beans>

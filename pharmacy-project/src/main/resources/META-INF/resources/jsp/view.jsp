@@ -13,10 +13,10 @@
 				</portlet:renderURL>
 				<a href="${goToNewDrugFormURL}">New drug form</a>
 				
-				<portlet:renderURL var="listAllDrugs">
-					<portlet:param name="MVCRenderCommand" value="/pharmacy/list/all-drugs"/>
+				<portlet:renderURL var="listAllDrugsURL">
+					<portlet:param name="mvcRenderCommandName" value="/pharmacy/list/all_drugs"/>
 				</portlet:renderURL>
-				<a href="${listAllDrugs}">Go to the drugs management</a>
+				<a href="${listAllDrugsURL}">Go to the drugs management</a>
 				
 				</form>
 			</c:when>
@@ -32,4 +32,5 @@
 		</c:choose>
 	</c:forEach>
 </c:if>
+
 <p>This is just a trial for test a new functionality</p>

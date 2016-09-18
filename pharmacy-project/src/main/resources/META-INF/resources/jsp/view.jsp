@@ -32,5 +32,3 @@
 		</c:choose>
 	</c:forEach>
 </c:if>
-
-<p>This is just a trial for test a new functionality</p>

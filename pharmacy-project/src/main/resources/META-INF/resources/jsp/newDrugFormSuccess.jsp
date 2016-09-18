@@ -14,6 +14,11 @@
 	<c:when test="${not empty message}">
 		<p>${message}</p>
 	</c:when>
+	<c:when test="${fromUpdate == true}">
+		<p>${drugQuantity}</p>
+		<p>${drugName}</p>
+		<p>${drugType}</p>
+	</c:when>
 	<c:otherwise>
 		<p>Nothing to say</p>
 	</c:otherwise>

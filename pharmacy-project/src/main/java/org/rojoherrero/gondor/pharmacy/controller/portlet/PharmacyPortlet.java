@@ -10,7 +10,7 @@ import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 
 import org.osgi.service.component.annotations.Component;
-import org.rojoherrero.gondor.pharmacy.portlet.constants.PharmacyPortletWebKeys;
+import org.rojoherrero.gondor.pharmacy.portlet.constants.PharmacyPortletKeys;
 
 import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.log.Log;
@@ -32,7 +32,7 @@ import com.liferay.portal.kernel.util.Validator;
 		"javax.portlet.init-param.view-template=/jsp/view.jsp",
 		"javax.portlet.resource-bundle=content.Language", 
 		"javax.portlet.security-role-ref=power-user,user",
-		"javax.portlet.name=" + PharmacyPortletWebKeys.PORTLET_NAME
+		"javax.portlet.name=" + PharmacyPortletKeys.PHARMACY_PORTLET
 	}, 
 	service = Portlet.class
 )

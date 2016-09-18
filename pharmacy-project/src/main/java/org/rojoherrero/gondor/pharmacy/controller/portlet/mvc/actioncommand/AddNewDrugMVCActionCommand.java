@@ -1,4 +1,4 @@
-package org.rojoherrero.gondor.pharmacy.controller.portlet.mvcactioncommand;
+package org.rojoherrero.gondor.pharmacy.controller.portlet.mvc.actioncommand;
 
 import java.util.Date;
 
@@ -7,7 +7,7 @@ import javax.portlet.ActionResponse;
 
 import org.osgi.service.component.annotations.Component;
 import org.rojoherrero.gondor.pharmacy.model.Drug;
-import org.rojoherrero.gondor.pharmacy.portlet.constants.PharmacyPortletWebKeys;
+import org.rojoherrero.gondor.pharmacy.portlet.constants.PharmacyPortletKeys;
 import org.rojoherrero.gondor.pharmacy.service.DrugLocalServiceUtil;
 
 import com.liferay.counter.kernel.service.CounterLocalServiceUtil;
@@ -23,7 +23,7 @@ import com.liferay.portal.kernel.util.PortalUtil;
 	immediate=true,
 	property={
 		"mvc.command.name=/pharmacy/add/new_drug",
-		"javax.portlet.name=" + PharmacyPortletWebKeys.PHARMACY_PORTLET
+		"javax.portlet.name=" + PharmacyPortletKeys.PHARMACY_PORTLET
 	},
 	service=MVCActionCommand.class	
 )

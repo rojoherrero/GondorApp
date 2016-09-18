@@ -1,11 +1,21 @@
 <%@ include file="/jsp/init.jsp"%>
 
-<portlet:renderURL var="mainViewURL">
-    <portlet:param name="mvcRenderCommandName" value="/jsp/view.jsp" />
+<portlet:renderURL var="returnToMainViewURL">
+	<portlet:param name="mvcRenderCommandName" value="/return/main/view"/>	
 </portlet:renderURL>
 
 <h1>Congratulations</h1>
-<a href="${mainViewURL}">Return to Main View</a>
-<div>
-	${savedDrug}
-</div>
+<a href="${returnToMainViewURL}">Return to Main View</a>
+
+<c:choose>
+	<c:when test="${not empty savedDrug}">
+		<p>${savedDrug}</p>
+	</c:when>
+	<c:when test="${not empty message}">
+		<p>${message}</p>
+	</c:when>
+	<c:otherwise>
+		<p>Nothing to say</p>
+	</c:otherwise>
+</c:choose>
+
